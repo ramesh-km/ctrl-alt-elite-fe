@@ -1,5 +1,27 @@
-import { createTheme } from '@mantine/core';
+import { createTheme, Select } from '@mantine/core';
 
 export const theme = createTheme({
-  /** Put your mantine theme override here */
+  primaryColor: 'green',
+  components: {
+    Button: {
+      defaultProps: {
+        size: 'xl',
+      },
+    },
+    TextInput: {
+      defaultProps: {
+        size: 'xl',
+      },
+    },
+    Text: {
+      defaultProps: {
+        size: 'xl',
+      },
+    },
+    Select: {
+      defaultProps: {
+        size: 'xl',
+      },
+    },
+  },
 });
