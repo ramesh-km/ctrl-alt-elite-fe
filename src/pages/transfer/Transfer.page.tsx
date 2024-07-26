@@ -87,9 +87,12 @@ function TransferPage() {
   if (userId && Number.parseInt(userId) > 2) {
     return (
       <Container>
-        <Alert color="red" __size="xl" icon={<IconBan />} mt={80}>
-          <Text size="xl">You are not authorized to access this page.</Text>
-        </Alert>
+        <Stack>
+          <Title>Bank transfer</Title>
+          <Alert color="red" __size="xl" icon={<IconBan />} mt={80}>
+            <Text size="xl">You are not authorized to access this page.</Text>
+          </Alert>
+        </Stack>
       </Container>
     );
   }
